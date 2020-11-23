@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("wooden-background.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#container {
+    position: relative;
+    left: 25%;
+    top: 25%;
+
+    width: 50%;
+    height: 48%;
+    padding: 3% 5%;
+
+    background: url("wooden-background.jpeg");
+    background-size: cover;
+    background-position: center;
+    
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 5px 0 4px 0 hsla(0, 0%, 0%, 0.7); 
+    box-shadow: 0 7px 5px 0 hsla(0, 0%, 0%, 0.7);
+}
+
+#overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.2);
+}
+
+#container p {
+    font-size: 45px;
+    font-family: 'Consolas';
+
+    margin: 1%;
+}
+
+#counter {
+    position: relative;
+    transform: translate(0, 50%);
+    font-size: 90px !important;
+}
+
+#increase, #decrease {
+    position: relative;
+    top: 35%;
+    
+    width: 20%;
+    padding: 10px 20px;
+    margin: 0 10px;
+    
+    border: none;
+    background-color: hsl(200, 20%, 50%);
+    box-shadow: 1px 1px 3px 0 hsl(200, 5%, 10%);
+    color: white;
+}
+
+#increase:hover, #decrease:hover {
+    background-color: hsl(200, 20%, 46%);
+}
+
+#increase:active, #decrease:active {
+    background-color: hsl(200, 20%, 55%);
+}
