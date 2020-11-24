@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Grandma's Store</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <img src="img/logo.svg" alt="" class="logo">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <p id="phone">Phone: + 123 456 789</p>
+            <button id="cart">2 items - $10.49</button>
+        </nav>
+
+        <div id="banner">
+            <div class="center">
+                <h1>Welcome to <span>Grandma's</span></h1>
+                <button>EXPLORE</button>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="text">
+                <h2>About <span>Us</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos nam incidunt eveniet quibusdam sequi, corporis pariatur autem earum unde ipsum eum excepturi velit aspernatur non, a omnis consequuntur atque molestiae!</p>
+                <button>EXPLORE</button>
+            </div>
+            <div class="image">
+                <div class="frame">
+                    <img src="img/sweets-2.jpeg" alt="sweet">
+                </div>
+            </div>
+        </div>
+
+        <div id="store">
+            <h2>Our <span>Store</span></h2>
+            <div id="filter-buttons">
+                <button data-filter="all">ALL</button>
+                <button data-filter="cake">CAKES</button>
+                <button data-filter="cupcake">CUPCAKES</button>
+                <button data-filter="doughnut">DOUGHNUTS</button>
+                <button data-filter="sweets">SWEETS</button>
+            </div>
+            <div id="search">
+                <input type="text" name="filter" placeholder="Search item...">
+            </div>
+            <div class="items">
+                <div class="card">
+                    <div class="image"></div>
+                    <div class="details">
+                        <p class="name">Product</p>
+                        <p class="price">$5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

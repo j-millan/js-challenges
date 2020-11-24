@@ -1,0 +1,270 @@
+* {
+    font-family: 'Kaushan Script', cursive;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("img/cupcakesBackground.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+/*-----------------------------------------NAVBAR-----------------------------------------*/
+nav {
+    background-color: white;
+    height: 50px;
+    padding: 5px;
+}
+
+nav * {
+    position: relative;
+    display: inline;
+    margin: 0;
+}
+
+.logo {
+    height: 100%;
+    left: 15px;
+}
+
+.nav-links {
+    display: inline-block;
+    bottom: 17px;
+    left: 20%;
+}
+
+.nav-links li {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: hsl(330, 90%, 75%);
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+#phone, #cart {
+    left: 50%;
+    bottom: 20px;
+    margin: 0 10px;
+}
+
+#cart {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+#cart:hover {
+    background-color: hsl(330, 90%, 75%);
+    border: 1px solid hsl(330, 90%, 75%);
+    color: white;
+}
+/*-----------------------------------------NAVBAR-----------------------------------------*/
+
+/*-----------------------------------------BANNER-----------------------------------------*/
+#banner {
+    width: 100%;
+    height: 800px;
+    
+    background-color: hsla(0, 0%, 40%, 0.3);
+    text-align: center;
+    
+}
+
+#banner .center {
+    position: relative;
+    top: 40%;
+
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 15px;
+
+    font-size: 40px;
+    color: white;
+}
+
+h1 span {
+    color: hsl(330, 100%, 70%);
+    font-size: 55px;
+}
+
+#banner button {
+    padding: 10px 20px;
+    font-size: 25px;
+    border: 2px solid black;
+}
+/*-----------------------------------------BANNER-----------------------------------------*/
+
+#banner button, #about .text button, #store #filter-buttons button {
+    border-radius: 5px;
+    background-color: hsla(0, 0%, 0%, 0);
+}
+
+#banner button:hover, #about .text button:hover, #store #filter-buttons button:hover {
+    color: hsl(330, 100%, 70%);
+    background-color: black;
+}
+
+/*-----------------------------------------ABOUT-----------------------------------------*/
+#about {
+    width: 100%;
+    padding: 7% 0;
+
+    background-color: white;
+    text-align: center;
+}
+
+#about div {
+    display: inline-block;
+}
+
+#about .text {
+    box-sizing: border-box;
+    width: 40%;
+    padding: 0 3%;
+    margin-left: 2%;
+
+    text-align: left;
+    float: left;
+}
+
+#about .text p {
+    padding-right: 8%;
+    margin-bottom: 6%;
+    
+    color: hsl(0, 0%, 40%);
+    font-size: 17px;
+}
+
+#about .text button, #store #filter-buttons button  {
+    border: 1px solid black;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+#about .image {
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 5%;
+}
+
+#about .image .frame {
+    width: 100%;
+    border: 7px solid hsl(50, 90%, 75%);
+}
+
+#about .image .frame img {
+    position: relative;
+    width: 100%;
+    top: 30px;
+    left: 30px;
+}
+/*-----------------------------------------ABOUT-----------------------------------------*/
+
+#about .text h2, #store h2 {
+    font-size: 35px;
+}
+
+#about .text h2 span, #store h2 span {
+    font-size: 55px;
+    color:  hsl(330, 100%, 75%);
+}
+
+/*-----------------------------------------STORE-----------------------------------------*/
+#store {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3% 2% 4% 2%;
+
+    background-color: hsl(0, 0%, 93%);
+    text-align: center;
+}
+
+#store #filter-buttons {
+    margin-bottom: 25px;
+}
+
+#store #filter-buttons button {
+    margin: 0 20px;
+}
+
+#store #search {
+    position: relative;
+    width: 40%;
+    left: 30%;
+}
+
+#store #search input {
+    box-sizing: border-box;
+    padding: 7px 10px;
+    width: 100%;
+
+    border-radius: 3px;
+    border: 1px solid hsl(0, 0%, 60%);
+    font-size: 16px;
+}
+
+#store .items {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3% 5%;
+    text-align: center;
+}
+/*-----------------------------------------STORE-----------------------------------------*/
+
+/*-----------------------------------------PRODUCT CARDS-----------------------------------------*/
+#store .items .card {
+    border-radius: 5px; 
+    border: 1px solid hsl(0, 0%, 80%);
+    
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+}
+
+#store .items .card .image {
+    background-image: url("img/cupcake-2.jpeg");
+    background-position: center;
+    background-size: cover !important;
+    cursor: pointer;
+
+    width: 100%;
+    height: 260px;
+}
+
+#store .items .card .details {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10px;
+    
+    background: white;
+}
+
+#store .items .card .details p {
+    display: inline-block;
+
+    font-size: 20px;
+}
+
+#store .items .details .name { text-align: left; width: 70%; }
+#store .items .details .price { text-align: right; }
+
+/*-----------------------------------------PRODUCT CARDS-----------------------------------------*/
