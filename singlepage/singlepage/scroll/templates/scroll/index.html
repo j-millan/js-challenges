@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Posts</title>
+
+        <style>
+            html, body {
+                width: 100%;
+            }
+            
+            #posts div {
+                position: relative;
+                left: 12.5%;
+
+                background-color: blueviolet;
+                color: white;
+                text-align: center;
+
+                font-size: 40px;
+
+                width: 75%;
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        </style>
+
+        <script>
+            let counter = 1;
+            const step = 10;
+            
+            const add_post = (content) => {
+                const post = document.createElement('div');
+                post.className = 'post';
+                post.innerHTML = content;
+                
+                document.getElementById('posts').appendChild(post);
+            }
+            
+            const load = () => {
+                const start = counter;
+                const end = start + step - 1;
+                counter = end + 1;
+
+                fetch(`/scroll/posts?start=${start}&end=${end}`)
+                .then(response => response.json())
+                .then(data => {
+                    data.posts.forEach(add_post)
+                })
+            }
+
+            window.addEventListener('scroll', _ => {
+                if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                    load();
+                }
+            });
+
+            document.addEventListener('DOMContentLoaded', load);
+        </script>
+    </head>
+
+    <body>
+        <div id="posts">
+
+        </div>
+    </body>
+</html>
